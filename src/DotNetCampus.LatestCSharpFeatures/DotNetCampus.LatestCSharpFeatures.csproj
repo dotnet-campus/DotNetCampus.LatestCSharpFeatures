@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net8.0;netstandard2.0;net40</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>dotnetCampus.LatestCSharpFeatures</PackageId>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <RootNamespace>System.Diagnostics.CodeAnalysis</RootNamespace>
     <Description>This comprehensive package provides support for the latest C# language features in your project, enabling older .NET projects to use newer C# language constructs. Currently includes support for 'nullable', 'init', and 'required' keywords. The types introduced are internal, confining these features to the project itself without affecting other projects that reference it. By installing this package, you get all the newest C# features in one place, eliminating the need to install separate packages for each feature. Future updates will include more new features as they are released.</Description>
