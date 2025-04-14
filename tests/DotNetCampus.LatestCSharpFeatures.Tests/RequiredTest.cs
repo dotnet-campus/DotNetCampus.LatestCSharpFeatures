@@ -1,4 +1,4 @@
-﻿namespace dotnetCampus.LatestCSharpFeatures.Tests;
+﻿namespace DotNetCampus.LatestCSharpFeatures.Tests;
 
 public class RequiredTest
 {

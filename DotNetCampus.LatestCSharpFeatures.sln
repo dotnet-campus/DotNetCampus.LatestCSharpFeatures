@@ -13,16 +13,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{8A6F61D3
 		build\Version.props = build\Version.props
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetCampus.LatestCSharpFeatures", "src\dotnetCampus.LatestCSharpFeatures\dotnetCampus.LatestCSharpFeatures.csproj", "{D0B0F7EB-3C81-45C4-BB47-5DCB16F2EA55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCampus.LatestCSharpFeatures", "src\DotNetCampus.LatestCSharpFeatures\DotNetCampus.LatestCSharpFeatures.csproj", "{D0B0F7EB-3C81-45C4-BB47-5DCB16F2EA55}"
 	ProjectSection(ProjectDependencies) = postProject
 		{642FA0CA-E827-4D96-9358-D596CD87DAF4} = {642FA0CA-E827-4D96-9358-D596CD87DAF4}
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{878C1D77-0A77-44BD-847E-164188B10677}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetCampus.LatestCSharpFeatures.Tests", "tests\dotnetCampus.LatestCSharpFeatures.Tests\dotnetCampus.LatestCSharpFeatures.Tests.csproj", "{D10BF09A-FDF3-43F0-BD54-49A73554CDAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCampus.LatestCSharpFeatures.Tests", "tests\DotNetCampus.LatestCSharpFeatures.Tests\DotNetCampus.LatestCSharpFeatures.Tests.csproj", "{D10BF09A-FDF3-43F0-BD54-49A73554CDAB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetCampus.LatestCSharpFeatures.Analyzer", "src\dotnetCampus.LatestCSharpFeatures.Analyzer\dotnetCampus.LatestCSharpFeatures.Analyzer.csproj", "{642FA0CA-E827-4D96-9358-D596CD87DAF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCampus.LatestCSharpFeatures.Analyzer", "src\DotNetCampus.LatestCSharpFeatures.Analyzer\DotNetCampus.LatestCSharpFeatures.Analyzer.csproj", "{642FA0CA-E827-4D96-9358-D596CD87DAF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>DotNetCampus.LatestCSharpFeatures</RootNamespace>
     <ImplicitUsings>true</ImplicitUsings>
     <IsPackable>false</IsPackable>
     <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
@@ -15,8 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="..\dotnetCampus.LatestCSharpFeatures\ExternalInit\*.cs" Link="Features\ExternalInit\%(RecursiveDir)\%(FileName)%(Extension)" />
-    <EmbeddedResource Include="..\dotnetCampus.LatestCSharpFeatures\**\*.cs" Link="Features\%(RecursiveDir)\%(FileName)%(Extension)" />
+    <Compile Include="..\DotNetCampus.LatestCSharpFeatures\ExternalInit\*.cs" LinkBase="Features\ExternalInit" />
+    <Compile Include="..\DotNetCampus.LatestCSharpFeatures\IndexRange\*.cs" LinkBase="Features\IndexRange" />
+    <EmbeddedResource Include="..\DotNetCampus.LatestCSharpFeatures\**\*.cs" LinkBase="Features" />
   </ItemGroup>
 
 </Project>
