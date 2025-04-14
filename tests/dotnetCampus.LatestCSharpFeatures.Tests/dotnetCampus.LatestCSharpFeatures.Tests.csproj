@@ -16,17 +16,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="dotnetCampus.LatestCSharpFeatures" Version="$(Version)" /> 
+    <PackageReference Include="dotnetCampus.LatestCSharpFeatures" Version="12.0.1" /> 
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="**\*.cs" />
-  </ItemGroup>
-
-  <!-- Clear local NuGet package cache. -->
-  <Target Name="ClearLocalNuGetCache">
-    <RemoveDir Directories="$(NuGetPackageRoot)dotnetCampus.latestcSharpfeatures\$(Version)\" />
-  </Target>
 
 </Project>
