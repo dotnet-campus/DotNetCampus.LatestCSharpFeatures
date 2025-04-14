@@ -39,8 +39,7 @@ public class FeatureGenerator : IIncrementalGenerator
     {
         foreach (var source in EmbeddedSourceFiles.Enumerate($"Features.{featureName}"))
         {
-            var name = Path.GetFileNameWithoutExtension(source.FileName);
-            context.AddSource($"{name}.g.cs", SourceText.From(source.Content, Encoding.UTF8));
+            context.AddSource(source.FileName, SourceText.From(source.Content, Encoding.UTF8));
         }
     }
 }
