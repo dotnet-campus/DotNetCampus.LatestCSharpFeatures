@@ -1,32 +1,28 @@
-﻿namespace dotnetCampus.LatestCSharpFeatures.Analyzer;
+﻿namespace dotnetCampus.LatestCSharpFeatures.Utils;
 
 /// <summary>
 /// 嵌入的文本资源的数据。
 /// </summary>
-/// <param name="EmbeddedName">文件在嵌入的资源中的名称。</param>
+/// <param name="FileName">文件的名称（含扩展名）。</param>
+/// <param name="TypeName">文件的名称（不含扩展名），或者也很可能是类型名称。</param>
+/// <param name="Namespace">文件的命名空间。</param>
 /// <param name="Content">文件的文本内容。</param>
-internal readonly record struct EmbeddedSourceFile(string EmbeddedName, string Content)
+internal readonly record struct EmbeddedSourceFile(
+    string FileName,
+    string TypeName,
+    string Namespace,
+    string Content)
 {
     /// <summary>
-    /// 根据资源名称猜测文件的无扩展名的名称。
+    /// 寻找 <paramref name="relativePath"/> 路径下的源代码名称和内容。
     /// </summary>
-    /// <returns>无扩展名的文件名。</returns>
-    public ReadOnlySpan<char> GuessFileNameWithoutExtension()
+    /// <param name="relativePath">资源文件的相对路径。请以“/”或“\”分隔文件夹。</param>
+    /// <returns></returns>
+    internal static EmbeddedSourceFile Get(string relativePath)
     {
-        var span = EmbeddedName.AsSpan();
-        var secondLastDotIndex = 0;
-        var lastDotIndex = 0;
-        for (var i = 0; i < span.Length; i++)
-        {
-            var c = span[i];
-            if (c is '.')
-            {
-                secondLastDotIndex = lastDotIndex;
-                lastDotIndex = i;
-            }
-        }
-        return lastDotIndex is 0
-            ? span
-            : span.Slice(secondLastDotIndex + 1, lastDotIndex - secondLastDotIndex - 1);
+        var directory = Path.GetDirectoryName(relativePath)!;
+        var fileName = Path.GetFileName(relativePath);
+        return EmbeddedSourceFiles.Enumerate(directory)
+            .Single(x => x.FileName == fileName);
     }
 }
