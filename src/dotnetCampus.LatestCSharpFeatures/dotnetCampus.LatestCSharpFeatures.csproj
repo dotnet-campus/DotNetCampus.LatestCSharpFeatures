@@ -7,6 +7,7 @@
     <RootNamespace>System.Diagnostics.CodeAnalysis</RootNamespace>
     <Description>This comprehensive package provides support for the latest C# language features in your project, enabling older .NET projects to use newer C# language constructs. Currently includes support for 'nullable', 'init', and 'required' keywords. The types introduced are internal, confining these features to the project itself without affecting other projects that reference it. By installing this package, you get all the newest C# features in one place, eliminating the need to install separate packages for each feature. Future updates will include more new features as they are released.</Description>
     <IncludeBuildOutput>false</IncludeBuildOutput>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +18,7 @@
 
   <Target Name="_IncludeAllDependencies" BeforeTargets="_GetPackageFiles">
     <ItemGroup>
+      <None Include="$(RepositoryRoot)README.md" Pack="true" PackagePath="\"/>
       <None Include="$(OutputPath)..\..\dotnetCampus.LatestCSharpFeatures.Analyzer\$(Configuration)\**\*.dll" Pack="True" PackagePath="analyzers\dotnet\cs" />
     </ItemGroup>
   </Target>
