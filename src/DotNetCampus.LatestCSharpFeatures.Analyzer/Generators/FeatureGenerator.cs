@@ -1,9 +1,9 @@
 using System.Text;
-using dotnetCampus.LatestCSharpFeatures.Utils;
+using DotNetCampus.LatestCSharpFeatures.Utils;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Text;
 
-namespace dotnetCampus.LatestCSharpFeatures;
+namespace DotNetCampus.LatestCSharpFeatures.Generators;
 
 /// <summary>
 /// 生成 C# 新特性所需的类。

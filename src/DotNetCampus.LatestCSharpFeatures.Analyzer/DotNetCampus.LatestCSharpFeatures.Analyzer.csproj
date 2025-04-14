@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>dotnetCampus.LatestCSharpFeatures</RootNamespace>
+    <RootNamespace>DotNetCampus.LatestCSharpFeatures</RootNamespace>
     <ImplicitUsings>true</ImplicitUsings>
     <IsPackable>false</IsPackable>
     <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
@@ -16,45 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="..\dotnetCampus.LatestCSharpFeatures\ExternalInit\*.cs" LinkBase="Features\ExternalInit" />
-    <Compile Include="..\dotnetCampus.LatestCSharpFeatures\IndexRange\*.cs" LinkBase="Features\IndexRange" />
-    <EmbeddedResource Include="..\dotnetCampus.LatestCSharpFeatures\**\*.cs" LinkBase="Features" />
-    <Compile Update="..\DotNetCampus.LatestCSharpFeatures\ExternalInit\IsExternalInit.g.cs">
-      <LinkBase>Features\ExternalInit\</LinkBase>
-      <Link>Features\ExternalInit\IsExternalInit.g.cs</Link>
-    </Compile>
-    <EmbeddedResource Update="..\DotNetCampus.LatestCSharpFeatures\ExternalInit\IsExternalInit.g.cs">
-      <LinkBase>Features\</LinkBase>
-      <Link>Features\ExternalInit\IsExternalInit.g.cs</Link>
-    </EmbeddedResource>
-    <Compile Update="..\DotNetCampus.LatestCSharpFeatures\IndexRange\Index.g.cs">
-      <LinkBase>Features\IndexRange\</LinkBase>
-      <Link>Features\IndexRange\Index.g.cs</Link>
-    </Compile>
-    <EmbeddedResource Update="..\DotNetCampus.LatestCSharpFeatures\IndexRange\Index.g.cs">
-      <LinkBase>Features\</LinkBase>
-      <Link>Features\IndexRange\Index.g.cs</Link>
-    </EmbeddedResource>
-    <Compile Update="..\DotNetCampus.LatestCSharpFeatures\IndexRange\Range.g.cs">
-      <LinkBase>Features\IndexRange\</LinkBase>
-      <Link>Features\IndexRange\Range.g.cs</Link>
-    </Compile>
-    <EmbeddedResource Update="..\DotNetCampus.LatestCSharpFeatures\IndexRange\Range.g.cs">
-      <LinkBase>Features\</LinkBase>
-      <Link>Features\IndexRange\Range.g.cs</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Update="..\DotNetCampus.LatestCSharpFeatures\Nullable\Nullable.g.cs">
-      <LinkBase>Features\</LinkBase>
-      <Link>Features\Nullable\Nullable.g.cs</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Update="..\DotNetCampus.LatestCSharpFeatures\Required\RequiredMemberAttribute.g.cs">
-      <LinkBase>Features\</LinkBase>
-      <Link>Features\Required\RequiredMemberAttribute.g.cs</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Update="..\DotNetCampus.LatestCSharpFeatures\Required\SetsRequiredMembersAttribute.g.cs">
-      <LinkBase>Features\</LinkBase>
-      <Link>Features\Required\SetsRequiredMembersAttribute.g.cs</Link>
-    </EmbeddedResource>
+    <Compile Include="..\DotNetCampus.LatestCSharpFeatures\ExternalInit\*.cs" LinkBase="Features\ExternalInit" />
+    <Compile Include="..\DotNetCampus.LatestCSharpFeatures\IndexRange\*.cs" LinkBase="Features\IndexRange" />
+    <EmbeddedResource Include="..\DotNetCampus.LatestCSharpFeatures\**\*.cs" LinkBase="Features" />
   </ItemGroup>
 
 </Project>

@@ -27,8 +27,8 @@
     <Company>dotnet campus（.NET 职业技术学院）</Company>
     <Copyright>Copyright © 2023-2024 dotnet campus, All Rights Reserved.</Copyright>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/dotnet-campus/dotnetCampus.LatestCSharpFeatures</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/dotnet-campus/dotnetCampus.LatestCSharpFeatures</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dotnet-campus/DotNetCampus.LatestCSharpFeatures</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/dotnet-campus/DotNetCampus.LatestCSharpFeatures</PackageProjectUrl>
   </PropertyGroup>
 
 </Project>

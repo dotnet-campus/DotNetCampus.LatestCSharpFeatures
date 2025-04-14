@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace dotnetCampus.LatestCSharpFeatures.Utils;
+namespace DotNetCampus.LatestCSharpFeatures.Utils;
 
 /// <summary>
 /// 从嵌入的资源中寻找源代码。

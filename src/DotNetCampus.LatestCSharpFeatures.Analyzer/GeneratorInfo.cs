@@ -1,4 +1,4 @@
-﻿namespace dotnetCampus.LatestCSharpFeatures;
+﻿namespace DotNetCampus.LatestCSharpFeatures;
 
 internal static class GeneratorInfo
 {

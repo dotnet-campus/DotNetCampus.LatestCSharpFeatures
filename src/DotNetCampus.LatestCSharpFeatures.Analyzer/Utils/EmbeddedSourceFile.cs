@@ -1,4 +1,4 @@
-﻿namespace dotnetCampus.LatestCSharpFeatures.Utils;
+﻿namespace DotNetCampus.LatestCSharpFeatures.Utils;
 
 /// <summary>
 /// 嵌入的文本资源的数据。

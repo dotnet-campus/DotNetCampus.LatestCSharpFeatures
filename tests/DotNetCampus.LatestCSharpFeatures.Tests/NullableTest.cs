@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace dotnetCampus.LatestCSharpFeatures.Tests;
+namespace DotNetCampus.LatestCSharpFeatures.Tests;
 
 public class NullableTest
 {
