@@ -25,6 +25,10 @@ public class FeatureGenerator : IIncrementalGenerator
         // .NET 5.0 才开始支持 ExternalInit
         GenerateFeatureSource(context, provider, "ExternalInit");
 
+        // .NET 6.0 才开始支持 DynamicallyAccessed
+        // 为低版本 .NET 生成对应代码，主要是简化编译多目标框架时的繁琐。
+        GenerateFeatureSource(context, provider, "DynamicallyAccessed");
+
         // .NET 7.0 才开始支持 SetsRequiredMembersAttribute
         GenerateFeatureSource(context, provider, "Required");
     }
