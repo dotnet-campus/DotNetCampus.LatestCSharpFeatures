@@ -1,10 +1,10 @@
 # Latest CSharp Features - 最新 C# 语言特性
 
-| Language                           |
-| ---------------------------------- |
-| [简体中文](/docs/README.zh-CHS.md) |
-| [繁體中文](/docs/README.zh-CHT.md) |
-| [English](/README.md)              |
+| Language                            |
+| ----------------------------------- |
+| [简体中文](/docs/README.zh-hans.md) |
+| [繁體中文](/docs/README.zh-hant.md) |
+| [English](/README.md)               |
 
 [![NuGet](https://img.shields.io/nuget/v/dotnetCampus.LatestCSharpFeatures.svg)](https://www.nuget.org/packages/dotnetCampus.LatestCSharpFeatures)
 
