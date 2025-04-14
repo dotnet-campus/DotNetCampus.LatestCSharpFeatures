@@ -1,4 +1,6 @@
-﻿using System.Runtime.CompilerServices;
+﻿#if DISABLE_LATEST_CSHARP_FEATURES_INDEX_RANGE
+#else
+using System.Runtime.CompilerServices;
 
 #if NETSTANDARD2_1 || NETCOREAPP3_0 || NETCOREAPP3_1 || NET5_0_OR_GREATER
 #else
@@ -143,4 +145,5 @@ internal readonly struct Index : IEquatable<Index>
         return ((uint)Value).ToString();
     }
 }
+#endif
 #endif
