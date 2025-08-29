@@ -1,0 +1,9 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "调试分析器": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "../../tests/DotNetCampus.LatestCSharpFeatures.Tests/DotNetCampus.LatestCSharpFeatures.Tests.csproj"
+    }
+  }
+}
