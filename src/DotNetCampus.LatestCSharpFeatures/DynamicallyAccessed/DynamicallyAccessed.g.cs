@@ -1,5 +1,5 @@
 ﻿#nullable enable
-#if !NET6_0_OR_GREATER
+#if !NET5_0_OR_GREATER
 
 namespace System.Diagnostics.CodeAnalysis
 {

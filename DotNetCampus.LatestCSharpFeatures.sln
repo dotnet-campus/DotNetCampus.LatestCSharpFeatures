@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{8A6F61D3
 		LICENSE.txt = LICENSE.txt
 		README.md = README.md
 		build\Version.props = build\Version.props
+		.github\workflows\dotnet-build.yml = .github\workflows\dotnet-build.yml
+		.github\workflows\nuget-tag-publish.yml = .github\workflows\nuget-tag-publish.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCampus.LatestCSharpFeatures", "src\DotNetCampus.LatestCSharpFeatures\DotNetCampus.LatestCSharpFeatures.csproj", "{D0B0F7EB-3C81-45C4-BB47-5DCB16F2EA55}"
