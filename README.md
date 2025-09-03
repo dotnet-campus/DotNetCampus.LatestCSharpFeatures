@@ -7,24 +7,24 @@
 [zh-hans]: /docs/README.zh-hans.md
 [zh-hant]: /docs/README.zh-hant.md
 
-[![NuGet](https://img.shields.io/nuget/v/dotnetCampus.LatestCSharpFeatures.svg)](https://www.nuget.org/packages/dotnetCampus.LatestCSharpFeatures)
+[![NuGet](https://img.shields.io/nuget/v/DotNetCampus.LatestCSharpFeatures.svg)](https://www.nuget.org/packages/DotNetCampus.LatestCSharpFeatures)
 
-This open-source project provides a NuGet package, dotnetCampus.LatestCSharpFeatures, which allows you to use the latest C# language features in older versions of .NET, including the old .NET Framework, .NET Standard, and older versions of .NET Core App and .NET.
+This open-source project provides a NuGet package, DotNetCampus.LatestCSharpFeatures, which allows you to use the latest C# language features in older versions of .NET, including the old .NET Framework, .NET Standard, and older versions of .NET Core App and .NET.
 
 ## How to Use
 
-Simply install the dotnetCampus.LatestCSharpFeatures NuGet package.
+Simply install the DotNetCampus.LatestCSharpFeatures NuGet package.
 
 ```xml
-<!-- Since dotnetCampus.LatestCSharpFeatures only contains source generators, it does not introduce any runtime dependencies.
+<!-- Since DotNetCampus.LatestCSharpFeatures only contains source generators, it does not introduce any runtime dependencies.
      We can set it to PrivateAssets="all" to avoid passing it on to other projects. -->
-<PackageReference Include="dotnetCampus.LatestCSharpFeatures" Version="12.0.0" PrivateAssets="all" />
+<PackageReference Include="DotNetCampus.LatestCSharpFeatures" Version="13.0.0" PrivateAssets="all" />
 ```
 
 If you want these new language features to also be effective for other projects that reference this project, you can add a conditional compilation symbol in the csproj file:
 
 ```xml
-<!-- By default, dotnetCampus.LatestCSharpFeatures introduces most new C# features into the current project using the internal modifier.
+<!-- By default, DotNetCampus.LatestCSharpFeatures introduces most new C# features into the current project using the internal modifier.
      By using this conditional compilation symbol, these types can be set to public, allowing other projects referencing this project to also use these new features.
      Note: Index/Range types are always internal and not affected by this setting. See explanation below. -->
 <DefineConstants>$(DefineConstants);USE_PUBLIC_LATEST_CSHARP_FEATURES</DefineConstants>
@@ -46,4 +46,4 @@ We welcome feedback and contributions from all users. If you encounter any probl
 
 If you wish to participate in the development of the project, you are also very welcome! You can Fork this repository and then submit a Pull Request.
 
-Thank you for your support and help with dotnetCampus.LatestCSharpFeatures!
+Thank you for your support and help with DotNetCampus.LatestCSharpFeatures!
