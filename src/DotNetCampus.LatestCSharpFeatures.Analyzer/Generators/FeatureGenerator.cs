@@ -36,6 +36,12 @@ public class FeatureGenerator : IIncrementalGenerator
 
         // .NET 7.0 才开始支持 SetsRequiredMembersAttribute。
         GenerateFeatureSource(context, "Required");
+
+        // .NET 7.0 才开始支持 UnscopedRefAttribute。
+        GenerateFeatureSource(context, "UnscopedRef");
+
+        // .NET 8.0 才开始支持 CollectionBuilderAttribute。
+        GenerateFeatureSource(context, "CollectionBuilder");
     }
 
     private void GenerateFeatureSource(IncrementalGeneratorPostInitializationContext context, string featureName)
